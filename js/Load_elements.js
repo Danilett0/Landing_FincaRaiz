@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
-  loadContent(document.querySelector("head"), "Landing_FincaRaiz/components/head.html");
-  loadContent(document.querySelector("header"), "Landing_FincaRaiz/components/header.html");
-  loadContent(document.querySelector("footer"), "Landing_FincaRaiz/components/footer.html");
+  loadContent(document.querySelector("head"), "/components/head.html");
+  loadContent(document.querySelector("header"), "/components/header.html");
+  loadContent(document.querySelector("footer"), "/components/footer.html");
 });
 
 function loadContent(element, file) {
