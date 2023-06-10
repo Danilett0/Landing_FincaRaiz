@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
-  loadContent(document.querySelector("head"), "../components/head.html");
-  loadContent(document.querySelector("header"), "../components/header.html");
-  loadContent(document.querySelector("footer"), "../components/footer.html");
+  loadContent(document.querySelector("head"), "xxxxx/components/head.html");
+  loadContent(document.querySelector("header"), "./components/header.html");
+  loadContent(document.querySelector("footer"), "/components/footer.html");
 });
 
 function loadContent(element, file) {
