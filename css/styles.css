@@ -10,16 +10,63 @@
   --Gris-Claro: #eeeeee9f;
 }
 
+a {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+a:hover {
+  color: var(--Azul-Claro);
+  font-size: 20px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
 p {
   font-size: 15px;
-  font-family: Ubuntu, sans-serif;
   color: var(--Gris-Oscuro);
   padding: 15px;
 }
 
+h4 {
+  color: var(--Azul-Claro);
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  text-align: center;
+  font-size: 25px;
+  color: var(--Gris-Oscuro);
+  margin-bottom: 5%;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  width: 100%;
+  max-width: 300px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  color: white;
+}
+
+h1:first-letter {
+  color: var(--Azul-Claro);
+}
+
 body {
-  font-family: "OpenSans", sans-serif;
-  background: #fcfcfc;
+  font-family: Ubuntu, sans-serif;
 }
 
 body header {
@@ -53,17 +100,6 @@ body header .int-header1 .sub-int-header1 {
   z-index: 22;
 }
 
-body header .int-header1 .sub-int-header1 h1 {
-  font-family: "OpenSans", sans-serif;
-  font-weight: bold;
-  font-size: 80px;
-  color: white;
-}
-
-body header .int-header1 .sub-int-header1 h1:first-letter {
-  color: var(--Azul-Claro);
-}
-
 body header .int-header1 .sub-int-header2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,20 +127,7 @@ body header .int-header1 .sub-int-header2 nav ul li {
   margin: auto 10px;
 }
 
-body header .int-header1 .sub-int-header2 nav ul li a {
-  color: white;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-}
 
-body header .int-header1 .sub-int-header2 nav ul li a:hover {
-  color: var(--Azul-Claro);
-  font-size: 20px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
 
 body header .int-header1 .sub-int-header2 nav li:hover {
   padding-bottom: 2px;
@@ -115,15 +138,6 @@ body header .int-header1 .sub-int-header2 nav li:hover {
 
 body header .int-header2 {
   margin-left: 5%;
-}
-
-body header .int-header2 h2 {
-  font-family: "OpenSans", sans-serif;
-  color: white;
-  font-weight: bold;
-  font-size: 22px;
-  width: 100%;
-  max-width: 300px;
 }
 
 body header .textos {
@@ -203,27 +217,6 @@ body header #desplegable nav ul li {
   border-radius: 3px;
 }
 
-body header #desplegable nav ul li a {
-  color: black;
-  display: block;
-  margin: auto;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-body header #desplegable nav ul li a:first-letter {
-  font-size: 22px;
-}
-
-body header #desplegable nav li:hover {
-  transition: 0.2s;
-  border-top: 5px solid var(--Azul-Claro);
-  border-bottom: 5px solid var(--Azul-Claro);
-}
-
 body main {
   width: 98%;
   max-width: 1800px;
@@ -248,21 +241,11 @@ body main .int-main1 {
   justify-content: space-evenly;
 }
 
-body main .int-main1 h3 {
-  font-family: "OpenSans", sans-serif;
-  text-align: center;
-  font-size: 27px;
-  color: var(--Gris-Oscuro);
-  text-shadow: -1px 1px 5px #cccccc;
-  margin-bottom: 5%;
-  text-transform: uppercase;
-}
-
 body main .int-main1 .box-p-main1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -277,8 +260,9 @@ body main .int-main1 .box-p-main1 .box-int-main1 {
   max-width: 400px;
   border-radius: 3px;
   border: 1px solid var(--Gris-Claro);
-  box-shadow: 1px 1px 10px var(--Gris-Claro);
+  box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.171);
   border-bottom: 10px solid transparent;
+  margin: 0px 10px;
 }
 
 body main .int-main1 .box-p-main1 .box-int-main1 img {
@@ -287,13 +271,6 @@ body main .int-main1 .box-p-main1 .box-int-main1 img {
   display: block;
   margin: auto;
   margin-top: 15px;
-}
-
-body main .int-main1 .box-p-main1 .box-int-main1 h4 {
-  color: var(--Azul-Claro);
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
 }
 
 body main .int-main1 .box-p-main1 .box-int-main1:hover {
@@ -319,15 +296,6 @@ body main .int-main2 {
   margin-top: 5%;
 }
 
-body main .int-main2 h3 {
-  font-family: "OpenSans", sans-serif;
-  text-align: center;
-  font-size: 27px;
-  color: var(--Gris-Oscuro);
-  text-shadow: -1px 1px 5px #cccccc;
-  text-transform: uppercase;
-}
-
 body main .int-main2 .box-p-main1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,7 +315,7 @@ body main .int-main2 .box-p-main1 {
 body main .int-main2 .box-p-main1 .box-int-main1 {
   width: 32%;
   border-radius: 3px;
-  box-shadow: 1px 1px 10px #e0e0e0;
+  box-shadow: 1px 1px 10px var(--Gris-Claro);
 }
 
 body main .int-main2 .box-p-main1 .box-int-main1 img {
@@ -357,18 +325,6 @@ body main .int-main2 .box-p-main1 .box-int-main1 img {
   display: block;
   margin: auto;
   border-radius: 3px 3px 0px 0px;
-}
-
-body main .int-main2 .box-p-main1 .box-int-main1 h4 {
-  color: var(--Gris-Oscuro);
-  font-weight: bolder;
-  font-size: 15px;
-  text-align: left;
-  padding-left: 10px;
-  text-transform: uppercase;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #0e8f0a;
-  font-family: "Ubuntu", sans-serif;
 }
 
 body main .int-main2 .box-p-main1 .box-int-main1 .sub-box {
@@ -382,7 +338,7 @@ body main .int-main2 .box-p-main1 .box-int-main1 .sub-box {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-bottom: 10px;
-  border-bottom: 2px solid #dfdfdf;
+  border-bottom: 2px solid var(--Gris-Claro);
 }
 
 body main .int-main2 .box-p-main1 .box-int-main1 .sub-box .box {
@@ -451,17 +407,8 @@ body .datos .int-datos1 {
   -ms-flex-pack: center;
   justify-content: center;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #e0e0e0;
+  box-shadow: 1px 1px 10px var(--Gris-Claro);
   position: relative;
-}
-
-body .datos .int-datos1 .int-datos1-1 h4 {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  font-weight: 700;
-  color: var(--Azul-Oscuro);
-  font-size: 25px;
-  text-shadow: 1px 1px 2px var(--Gris-Oscuro);
 }
 
 body .datos .int-datos1 .int-datos1-2 {
@@ -470,10 +417,9 @@ body .datos .int-datos1 .int-datos1-2 {
 }
 
 body .datos .int-datos1 .int-datos1-2 form span {
-  font-family: "OpenSans", sans-serif;
   text-align: center;
-  color: #020233;
-  font-size: 15px;
+  color: var(--Gris-Oscuro);
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -481,9 +427,8 @@ body .datos .int-datos1 .int-datos1-2 form input {
   width: 70%;
   height: 30px;
   border-radius: 5px;
-  margin-bottom: 2%;
-  border: 1px solid #ebeaea;
-  box-shadow: 1px 1px 10px #e0e0e0;
+  margin: 15px auto;
+  border: 1px solid var(--Gris-Claro);
   margin-top: 5px;
   position: relative;
 }
@@ -493,31 +438,24 @@ body .datos .int-datos1 .int-datos1-2 form textarea {
   height: 70px;
   border-radius: 5px;
   padding: 5px 3px;
-  font-family: "OpenSans", sans-serif;
-  color: #020233;
-  font-size: 15px;
-  border: 1px solid #e4e3e3;
-  text-align: left;
-  box-shadow: 1px 1px 10px #e0e0e0;
-  margin: 5px auto;
-  position: relative;
+  border: 1px solid var(--Gris-Claro);
 }
 
 body .datos .int-datos1 .int-datos1-2 form button {
-  background: #00ccff;
+  background-color: var(--Azul-Claro);
   border-radius: 5px;
   width: 30%;
   padding: 10px 15px;
-  font-family: "OpenSans", sans-serif;
   text-align: center;
   border: none;
   color: white;
   font-weight: bold;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 body .datos .int-datos1 .int-datos1-2 form button:hover {
-  background: #00abd6;
+  background-color: var(--Azul-Oscuro);
 }
 
 body .datos .int-datos2 {
@@ -532,7 +470,7 @@ body .datos .int-datos2 {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #e0e0e0;
+  box-shadow: 1px 1px 10px var(--Gris-Claro);
   position: relative;
 }
 
@@ -550,15 +488,6 @@ body .datos .int-datos2 .hombre-tablet {
   width: 25%;
 }
 
-body .datos .int-datos2 .int-datos2-1 h4 {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  font-weight: 700;
-  color: var(--Azul-Oscuro);
-  font-size: 25px;
-  text-shadow: 1px 1px 2px var(--Gris-Oscuro);
-}
-
 body .datos .int-datos2 .int-datos2-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -573,14 +502,6 @@ body .datos .int-datos2 .int-datos2-2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-body .datos .int-datos2 .int-datos2-2 h5 {
-  font-family: "Ubuntu", sans-serif;
-  color: var(--Azul-Oscuro);
-  font-size: 20px;
-  font-weight: bold;
-  text-shadow: -2px 3px 3px #c0bfbf;
 }
 
 body .datos .int-datos2 .int-datos2-2 .imagenes {
@@ -620,24 +541,6 @@ body .datos .int-datos2 .int-datos2-3 {
   flex-direction: column;
 }
 
-body .datos .int-datos2 .int-datos2-3 .titulo-caja1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-top: 0px;
-}
-
-body .datos .int-datos2 .int-datos2-3 .titulo-caja1 h4 {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  font-weight: 700;
-  color: var(--Azul-Oscuro);
-  font-size: 14px;
-}
-
 body .datos .int-datos2 .int-datos2-3 .caja1 {
   width: 100%;
   display: -webkit-box;
@@ -656,23 +559,6 @@ body .datos .int-datos2 .int-datos2-3 .caja1 {
 body .datos .int-datos2 .int-datos2-3 .caja1 img {
   width: 27px;
   margin-right: 5px;
-}
-
-body .datos .int-datos2 .int-datos2-3 .titulo-caja2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
-body .datos .int-datos2 .int-datos2-3 .titulo-caja2 h4 {
-  font-family: "Ubuntu", sans-serif;
-  text-align: center;
-  font-weight: 700;
-  color: var(--Azul-Oscuro);
-  font-size: 14px;
 }
 
 body .datos .int-datos2 .int-datos2-3 .caja2 {
@@ -697,7 +583,7 @@ body .datos .int-datos2 .int-datos2-3 .caja2 img {
 
 body footer {
   width: 100%;
-  background: #3e3e3e;
+  background: rgb(6, 38, 51);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -707,7 +593,6 @@ body footer {
   flex-direction: row;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding: 1% 0px;
 }
 
 body footer .int-footer1 {
@@ -730,16 +615,6 @@ body footer .int-footer1 nav ul {
 
 body footer .int-footer1 nav ul li {
   margin-right: 20px;
-}
-
-body footer .int-footer1 nav ul li a {
-  color: white;
-  font-weight: bold;
-  font-size: 17px;
-}
-
-body footer .int-footer1 nav ul li a:hover {
-  color: var(--Azul-Claro);
 }
 
 body footer .int-footer2 {
@@ -801,7 +676,7 @@ body .datos .int-datos1 .sentado {
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    box-shadow: 1px 1px 10px #e0e0e0;
+    box-shadow: 1px 1px 10px var(--Gris-Claro);
     border-radius: 5px;
   }
 }
@@ -815,7 +690,7 @@ body .datos .int-datos1 .sentado {
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
-    box-shadow: 1px 1px 10px #e0e0e0;
+    box-shadow: 1px 1px 10px var(--Gris-Claro);
     border-radius: 5px;
   }
 }
@@ -889,8 +764,8 @@ body .datos .int-datos1 .sentado {
 }
 
 @media screen and (max-width: 650px) {
-  body footer .int-footer1 nav ul li a {
-    font-size: 10px;
+  a {
+    font-size: 11px;
   }
 
   body footer .int-footer2 p {
@@ -905,15 +780,12 @@ body .datos .int-datos1 .sentado {
     max-height: 60px;
   }
 
-  body header .int-header1 .sub-int-header1 h1 {
+  h1 {
     font-size: 30px;
   }
 
-  body header .int-header1 .sub-int-header2 nav ul li a {
-    font-size: 14px;
-  }
 
-  body header .int-header2 h2 {
+  h2 {
     font-size: 15px;
   }
 
@@ -927,10 +799,6 @@ body .datos .int-datos1 .sentado {
 }
 
 @media screen and (max-width: 500px) {
-  body .datos .int-datos2 .int-datos2-2 h5 {
-    text-shadow: none;
-  }
-
   body footer .int-footer2 img {
     width: 10px;
   }
@@ -959,7 +827,7 @@ body .datos .int-datos1 .sentado {
     display: none;
   }
 
-  body .datos .int-datos2 .int-datos2-1 h4 {
+  h4 {
     font-size: 20px;
     text-shadow: none;
   }
@@ -976,11 +844,6 @@ body .datos .int-datos1 .sentado {
 
   body .datos .int-datos1 .int-datos1-2 form input {
     width: 100%;
-  }
-
-  body .datos .int-datos1 .int-datos1-1 h4 {
-    font-size: 20px;
-    text-shadow: none;
   }
 
   body .datos .int-datos1 .sentado {
