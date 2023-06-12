@@ -1,22 +1,27 @@
 * {
   list-style: none;
   text-decoration: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 :root {
   --Azul-Claro: #19aee9;
   --Azul-Oscuro: #0c669b;
   --Gris-Oscuro: #5e5e5e;
+  --Gris-Claro: #eeeeee9f;
+}
+
+p {
+  font-size: 15px;
+  font-family: Ubuntu, sans-serif;
+  color: var(--Gris-Oscuro);
+  padding: 15px;
 }
 
 body {
   font-family: "OpenSans", sans-serif;
   background: #fcfcfc;
 }
+
 body header {
   width: 100%;
   height: 80vh;
@@ -68,6 +73,7 @@ body header .int-header1 .sub-int-header2 {
   align-items: flex-end;
   margin-bottom: 1%;
 }
+
 body header .int-header1 .sub-int-header2 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -84,6 +90,7 @@ body header .int-header1 .sub-int-header2 nav ul li {
   display: flex;
   margin: auto 10px;
 }
+
 body header .int-header1 .sub-int-header2 nav ul li a {
   color: white;
   font-family: "Ubuntu", sans-serif;
@@ -98,15 +105,18 @@ body header .int-header1 .sub-int-header2 nav ul li a:hover {
   -o-transition: 0.5s;
   transition: 0.5s;
 }
+
 body header .int-header1 .sub-int-header2 nav li:hover {
   padding-bottom: 2px;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 body header .int-header2 {
   margin-left: 5%;
 }
+
 body header .int-header2 h2 {
   font-family: "OpenSans", sans-serif;
   color: white;
@@ -142,6 +152,7 @@ body header .menu-hamburguer .linea1 {
   border-radius: 5px;
   margin-top: 2px;
 }
+
 body header .menu-hamburguer .linea2 {
   width: 90%;
   height: 5px;
@@ -150,6 +161,7 @@ body header .menu-hamburguer .linea2 {
   border-radius: 5px;
   margin-top: 8px;
 }
+
 body header .menu-hamburguer .linea3 {
   width: 90%;
   height: 5px;
@@ -182,6 +194,7 @@ body header #desplegable nav ul {
   flex-direction: column;
   align-items: center;
 }
+
 body header #desplegable nav ul li {
   background: white;
   width: 60%;
@@ -189,6 +202,7 @@ body header #desplegable nav ul li {
   padding: 7px 15px;
   border-radius: 3px;
 }
+
 body header #desplegable nav ul li a {
   color: black;
   display: block;
@@ -199,14 +213,17 @@ body header #desplegable nav ul li a {
   text-align: center;
   text-transform: uppercase;
 }
+
 body header #desplegable nav ul li a:first-letter {
   font-size: 22px;
 }
+
 body header #desplegable nav li:hover {
   transition: 0.2s;
   border-top: 5px solid var(--Azul-Claro);
   border-bottom: 5px solid var(--Azul-Claro);
 }
+
 body main {
   width: 98%;
   max-width: 1800px;
@@ -215,9 +232,9 @@ body main {
   padding-top: 0;
   padding-bottom: 4%;
 }
+
 body main .int-main1 {
-  width: 95%;
-  margin: auto;
+  width: 100%;
   border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -229,9 +246,8 @@ body main .int-main1 {
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
-
-  padding: 5% 0px;
 }
+
 body main .int-main1 h3 {
   font-family: "OpenSans", sans-serif;
   text-align: center;
@@ -241,27 +257,28 @@ body main .int-main1 h3 {
   margin-bottom: 5%;
   text-transform: uppercase;
 }
+
 body main .int-main1 .box-p-main1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-box-pack: space-evenly;
   -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
-  width: 95%;
-  margin: auto;
+  width: 100%;
 }
 
 body main .int-main1 .box-p-main1 .box-int-main1 {
-  width: 30%;
+  width: 100%;
+  max-width: 400px;
   border-radius: 3px;
-  -webkit-box-shadow: -3px 4px 5px #f0f0f0;
-  box-shadow: 1px 1px 10px #e0e0e0;
-  padding: 2% 0px;
+  border: 1px solid var(--Gris-Claro);
+  box-shadow: 1px 1px 10px var(--Gris-Claro);
+  border-bottom: 10px solid transparent;
 }
 
 body main .int-main1 .box-p-main1 .box-int-main1 img {
@@ -271,21 +288,19 @@ body main .int-main1 .box-p-main1 .box-int-main1 img {
   margin: auto;
   margin-top: 15px;
 }
+
 body main .int-main1 .box-p-main1 .box-int-main1 h4 {
   color: var(--Azul-Claro);
   font-weight: bold;
   font-size: 20px;
   text-align: center;
 }
-body main .int-main1 .box-p-main1 .box-int-main1 p {
-  font-size: 15px;
-  padding: 0px 20px;
-  color: var(--Gris-Oscuro);
-}
 
 body main .int-main1 .box-p-main1 .box-int-main1:hover {
-  background: #f1f1f1;
+  border-bottom: 10px solid var(--Azul-Claro);
+  background-color: var(--Gris-Claro);
 }
+
 body main .int-main2 {
   width: 95%;
   margin: auto;
@@ -303,6 +318,7 @@ body main .int-main2 {
   padding-bottom: 20px;
   margin-top: 5%;
 }
+
 body main .int-main2 h3 {
   font-family: "OpenSans", sans-serif;
   text-align: center;
@@ -311,6 +327,7 @@ body main .int-main2 h3 {
   text-shadow: -1px 1px 5px #cccccc;
   text-transform: uppercase;
 }
+
 body main .int-main2 .box-p-main1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,12 +370,7 @@ body main .int-main2 .box-p-main1 .box-int-main1 h4 {
   border-bottom: 2px solid #0e8f0a;
   font-family: "Ubuntu", sans-serif;
 }
-body main .int-main2 .box-p-main1 .box-int-main1 p {
-  font-size: 15px;
-  padding: 0px 10px;
-  margin-top: 5px;
-  color: var(--Gris-Oscuro);
-}
+
 body main .int-main2 .box-p-main1 .box-int-main1 .sub-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,6 +384,7 @@ body main .int-main2 .box-p-main1 .box-int-main1 .sub-box {
   padding-bottom: 10px;
   border-bottom: 2px solid #dfdfdf;
 }
+
 body main .int-main2 .box-p-main1 .box-int-main1 .sub-box .box {
   width: 30%;
   display: -webkit-box;
@@ -382,23 +395,14 @@ body main .int-main2 .box-p-main1 .box-int-main1 .sub-box .box {
   align-items: center;
   margin-top: 15px;
 }
+
 body main .int-main2 .box-p-main1 .box-int-main1 .sub-box .box img {
   width: 55px;
   height: 50px;
 }
-body main .int-main2 .box-p-main1 .box-int-main1 .sub-box .box p {
-  display: block;
-  font-weight: bold;
-  color: var(--Azul-Claro);
-  margin: auto;
-  font-family: "Ubuntu", sans-serif;
-  font-size: 13px;
-  background: rgba(241, 241, 241, 0.37);
-  border-radius: 10px;
-  padding: 4px 8px;
-}
+
 body main .int-main2 .box-p-main1 .box-int-main1 .button {
- background-color: var(--Azul-Claro);
+  background-color: var(--Azul-Claro);
   width: 70%;
   padding: 11px 0px;
   border-radius: 7px;
@@ -416,8 +420,9 @@ body main .int-main2 .box-p-main1 .box-int-main1 .button:hover {
 }
 
 body main .int-main2 .box-p-main1 .box-int-main1:hover {
-  background: #f0f0f0;
+  background: var(--Gris-Claro);
 }
+
 body .datos {
   width: 95%;
   display: -webkit-box;
@@ -456,19 +461,14 @@ body .datos .int-datos1 .int-datos1-1 h4 {
   font-weight: 700;
   color: var(--Azul-Oscuro);
   font-size: 25px;
-  text-shadow: -2px 3px 3px #a5a4a4;
+  text-shadow: 1px 1px 2px var(--Gris-Oscuro);
 }
 
-body .datos .int-datos1 .int-datos1-1 p {
-  font-family: "OpenSans", sans-serif;
-  text-align: center;
-  color: #020233;
-  font-size: 16px;
-}
 body .datos .int-datos1 .int-datos1-2 {
   width: 90%;
   margin: 5% auto;
 }
+
 body .datos .int-datos1 .int-datos1-2 form span {
   font-family: "OpenSans", sans-serif;
   text-align: center;
@@ -476,6 +476,7 @@ body .datos .int-datos1 .int-datos1-2 form span {
   font-size: 15px;
   font-weight: bold;
 }
+
 body .datos .int-datos1 .int-datos1-2 form input {
   width: 70%;
   height: 30px;
@@ -514,9 +515,11 @@ body .datos .int-datos1 .int-datos1-2 form button {
   font-weight: bold;
   cursor: pointer;
 }
+
 body .datos .int-datos1 .int-datos1-2 form button:hover {
   background: #00abd6;
 }
+
 body .datos .int-datos2 {
   width: 48%;
   display: -webkit-box;
@@ -553,14 +556,9 @@ body .datos .int-datos2 .int-datos2-1 h4 {
   font-weight: 700;
   color: var(--Azul-Oscuro);
   font-size: 25px;
-  text-shadow: -2px 3px 3px #a5a4a4;
+  text-shadow: 1px 1px 2px var(--Gris-Oscuro);
 }
 
-body .datos .int-datos2 .int-datos2-1 p {
-  font-family: "OpenSans", sans-serif;
-  text-align: center;
-  color: #020233;
-}
 body .datos .int-datos2 .int-datos2-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,6 +574,7 @@ body .datos .int-datos2 .int-datos2-2 {
   -ms-flex-align: center;
   align-items: center;
 }
+
 body .datos .int-datos2 .int-datos2-2 h5 {
   font-family: "Ubuntu", sans-serif;
   color: var(--Azul-Oscuro);
@@ -596,10 +595,12 @@ body .datos .int-datos2 .int-datos2-2 .imagenes {
   -ms-flex-align: center;
   align-items: center;
 }
+
 body .datos .int-datos2 .int-datos2-2 .imagenes img {
   display: block;
   margin: 0px 3px;
 }
+
 body .datos .int-datos2 .int-datos2-2 .imagenes img:hover {
   -webkit-animation-name: animacion2;
   animation-name: animacion2;
@@ -608,6 +609,7 @@ body .datos .int-datos2 .int-datos2-2 .imagenes img:hover {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
 body .datos .int-datos2 .int-datos2-3 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -617,6 +619,7 @@ body .datos .int-datos2 .int-datos2-3 {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+
 body .datos .int-datos2 .int-datos2-3 .titulo-caja1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -626,6 +629,7 @@ body .datos .int-datos2 .int-datos2-3 .titulo-caja1 {
   justify-content: center;
   margin-top: 0px;
 }
+
 body .datos .int-datos2 .int-datos2-3 .titulo-caja1 h4 {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -633,6 +637,7 @@ body .datos .int-datos2 .int-datos2-3 .titulo-caja1 h4 {
   color: var(--Azul-Oscuro);
   font-size: 14px;
 }
+
 body .datos .int-datos2 .int-datos2-3 .caja1 {
   width: 100%;
   display: -webkit-box;
@@ -647,15 +652,12 @@ body .datos .int-datos2 .int-datos2-3 .caja1 {
   justify-content: center;
   margin-top: -20px;
 }
-body .datos .int-datos2 .int-datos2-3 .caja1 p {
-  font-size: 13px;
-  font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
-}
+
 body .datos .int-datos2 .int-datos2-3 .caja1 img {
   width: 27px;
   margin-right: 5px;
 }
+
 body .datos .int-datos2 .int-datos2-3 .titulo-caja2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -664,6 +666,7 @@ body .datos .int-datos2 .int-datos2-3 .titulo-caja2 {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 body .datos .int-datos2 .int-datos2-3 .titulo-caja2 h4 {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
@@ -671,6 +674,7 @@ body .datos .int-datos2 .int-datos2-3 .titulo-caja2 h4 {
   color: var(--Azul-Oscuro);
   font-size: 14px;
 }
+
 body .datos .int-datos2 .int-datos2-3 .caja2 {
   width: 100%;
   display: -webkit-box;
@@ -685,15 +689,12 @@ body .datos .int-datos2 .int-datos2-3 .caja2 {
   justify-content: center;
   margin-top: -20px;
 }
-body .datos .int-datos2 .int-datos2-3 .caja2 p {
-  font-size: 13px;
-  font-weight: bold;
-  font-family: "Ubuntu", sans-serif;
-}
+
 body .datos .int-datos2 .int-datos2-3 .caja2 img {
   width: 30px;
   margin-right: 5px;
 }
+
 body footer {
   width: 100%;
   background: #3e3e3e;
@@ -708,6 +709,7 @@ body footer {
   justify-content: space-around;
   padding: 1% 0px;
 }
+
 body footer .int-footer1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -719,14 +721,17 @@ body footer .int-footer1 {
   -ms-flex-align: center;
   align-items: center;
 }
+
 body footer .int-footer1 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 body footer .int-footer1 nav ul li {
   margin-right: 20px;
 }
+
 body footer .int-footer1 nav ul li a {
   color: white;
   font-weight: bold;
@@ -736,6 +741,7 @@ body footer .int-footer1 nav ul li a {
 body footer .int-footer1 nav ul li a:hover {
   color: var(--Azul-Claro);
 }
+
 body footer .int-footer2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -746,11 +752,6 @@ body footer .int-footer2 {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-body footer .int-footer2 p {
-  color: white;
-  font-weight: bold;
-  font-size: 15px;
 }
 
 body footer .int-footer2 img {
@@ -779,7 +780,7 @@ body header .menu-hamburguer {
 }
 
 body header .menu-hamburguer:hover {
-  opacity: .5;
+  opacity: 0.5;
   transition: 1s;
 }
 
@@ -796,6 +797,7 @@ body .datos .int-datos1 .sentado {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -803,11 +805,13 @@ body .datos .int-datos1 .sentado {
     border-radius: 5px;
   }
 }
+
 @keyframes animacion2 {
   0% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
   }
+
   to {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -935,8 +939,6 @@ body .datos .int-datos1 .sentado {
     max-height: 200px;
   }
 
-  
-
   body header #desplegable {
     display: none;
   }
@@ -985,5 +987,3 @@ body .datos .int-datos1 .sentado {
     display: none;
   }
 }
-
-/* clases adicionales */
